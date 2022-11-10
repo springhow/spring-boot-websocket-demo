@@ -10,7 +10,7 @@
         let ws;
 
         function connect() {
-            ws = new WebSocket("ws://localhost:8080/hello");
+            ws = new WebSocket("ws://localhost:8080/chat");
             ws.onmessage = function (e) {
                 printMessage(e.data);
             }
